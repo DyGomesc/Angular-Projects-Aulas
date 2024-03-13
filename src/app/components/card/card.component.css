@@ -1,9 +1,16 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card {
   width: 300px;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 .card img {
   max-width: 100%;

@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-
+  produto = 'Bananas'
+  valor = '5,00'
 }
