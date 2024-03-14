@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  produto = 'Bananas'
-  valor = '5,00'
+ @Input() item: {produto: string; valor: string} | undefined; 
 }
